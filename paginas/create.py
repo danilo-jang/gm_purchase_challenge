@@ -2,12 +2,13 @@ import streamlit as st
 import models.Forecast as forecast
 import services.database as db
 
-def run():
+def run(username):
     
     st.header(':heavy_plus_sign: Cadastro de Previsão')
 
     with st.form(key = 'input_forescast'):
 
+        input_username = username
         input_supp_code = st.text_input(label='Insira o código do fornecedor')
         input_year = st.number_input(label= 'Insira o ano', step = 1)
         input_month = st.selectbox('Selecione o mês', list(range(1, 13)))
@@ -17,7 +18,7 @@ def run():
 
     if input_btn_submit:
 
-        forecast.user = 'danilo.jang'
+        forecast.user = input_username
         forecast.year = input_year
         forecast.month = input_month
         forecast.supp_code = input_supp_code

@@ -1,0 +1,16 @@
+credentials:
+  usernames:
+    djang:
+      email: danilo@gmail.com
+      logged_in: False
+      name: Danilo Jang
+      password: abc123
+    teste:
+      email: default@gmail.com
+      logged_in: False
+      name: Default
+      password: teste123
+cookie:
+  expiry_days: 1
+  key: some_signature_key
+  name: some_cookie_name
