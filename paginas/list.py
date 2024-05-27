@@ -80,7 +80,7 @@ def run():
     st.header(":mag_right: Consultar Previsões Cadastradas")
 
     data = db.read_data()
-    df = pd.DataFrame(data, columns= ['Id', 'Código do Fornecedor', 'Ano', 'Mês', 'Preço Unitário (U$)', 'Vol. Unitário', 'Usuário'])
+    df = pd.DataFrame(data, columns= ['Id', 'Código do Fornecedor', 'Ano', 'Mês', 'Preço Unitário (U$)', 'Volume', 'Usuário'])
     df.drop(columns = ['Id'], inplace= True)
 
     st.dataframe(filter_dataframe(df))
