@@ -9,7 +9,7 @@ def run():
 
     st.markdown(
     '''
-        Esta solução foi desenvolvida com o objetivo de atender o desafio de criar uma ferramenta na qual os analistas possam inserir dados prevendo o faturamento dos fornecedores nos próximos anos.
+        Esta solução foi desenvolvida com o objetivo de atender o desafio de criar uma ferramenta na qual os analistas possam inserir dados de previsão de faturamento dos fornecedores nos próximos anos.
     '''
     )
 
